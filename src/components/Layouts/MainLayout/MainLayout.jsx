@@ -1,7 +1,8 @@
 // import React from 'react'
 import { Outlet } from "react-router-dom";
+// components import
+import {Header} from "../../partials/Header/Header";
 import { Footer } from "../../partials/Footer/Footer";
-import Header from "../../partials/Header/Header";
 
 const MainLayout = () => {
   return (
