@@ -1,9 +1,9 @@
 // import React from 'react'
 import { RouterProvider } from "react-router-dom";
-import { Routes } from "../../config/router/Router";
+import { AuthenticationRouter } from "../../config/router/Authentication.router";
 
 const AppProvider = () => {
-  return <RouterProvider router={Routes} />;
+  return <RouterProvider router={AuthenticationRouter} />;
 };
 
 export { AppProvider };
