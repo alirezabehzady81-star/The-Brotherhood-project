@@ -1,7 +1,13 @@
 /* import tailwind css */
 @import "tailwindcss";
 /* body styles */
+@font-face {
+  font-family: "yekan";
+  src: url("../fonts/Yekan.ttf");
+}
+
 body {
   margin: 0;
   direction: rtl;
+  font-family: "yekan";
 }
