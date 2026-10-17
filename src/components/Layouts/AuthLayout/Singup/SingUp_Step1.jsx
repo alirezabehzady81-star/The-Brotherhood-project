@@ -18,7 +18,7 @@ const SingUp_Step1 = () => {
             </h2>
             {/* phone number form */}
             <Formik>
-              <Form className="flex flex-col items-center gap-1">
+              <Form className="flex flex-col items-center gap-1.5">
                 <Field
                   className="mb-10 w-66.5 h-11.75 rounded-[9px] border border-[#ddd] inset-shadow-[0_1px_2px_0_rgba(0,0,0,0.25)] bg-[#F7F7F7] indent-5 text-[12px] font-bold"
                   placeholder="شماره همراه"
