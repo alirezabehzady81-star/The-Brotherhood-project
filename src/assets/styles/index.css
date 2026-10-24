@@ -1,7 +1,47 @@
+@import "@heroui/styles"; 
 /* import tailwind css */
 @import "tailwindcss";
 /* body styles */
+
+:root {
+  
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media () {
+  :root {
+    --text: #F9F9F9;
+    --text-h: #F9F9F9;
+    --bg: #F9F9F9;
+    --border: #2e303a;
+    --code-bg: #F9F9F9;
+    --accent: #F9F9F9;
+    --accent-bg: #F9F9F9;
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: #F9F9F9;
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+ 
+}
+
 body {
   margin: 0;
-  direction: rtl;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+min-height: 2432px;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
