@@ -1,7 +1,11 @@
 /* import tailwind css */
 @import "tailwindcss";
+
 /* body styles */
 body {
-  margin: 0;
+  margin: 0px;
   direction: rtl;
+  padding: 0px;
 }
+
+ 
