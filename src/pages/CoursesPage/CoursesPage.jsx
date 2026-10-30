@@ -10,7 +10,7 @@ const CoursesPage = () => {
       <Header />
       {/* corses page */}
       <div className="pt-7.5 pb-2.25 flex justify-center">
-      <Outlet />
+        <Outlet />
       </div>
       {/* footer */}
       <Footer />
