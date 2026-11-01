@@ -4,7 +4,7 @@ import { MainLayout } from "../../components/Layouts/MainLayout/MainLayout";
 import { AuthWrapper } from "../../components/Layouts/AuthLayout/AuthWrapper";
 import { AuthenticationRouter } from "./Authentication.router";
 import { CoursesPage } from "./../../pages/CoursesPage/CoursesPage";
-import { CorsesHeroSection } from "../../components/partials/heroSections/CorsesHeroSection/CorsesHeroSection";
+import { CourseItem } from "../../pages/CoursesPage/components/CourseItem/CourseItem";
 
 const Routes = createBrowserRouter([
   {
@@ -19,7 +19,12 @@ const Routes = createBrowserRouter([
   {
     path: "/courses",
     element: <CoursesPage />,
-    children: [{ path: "/courses", element: <CorsesHeroSection /> }],
+    children: [
+      {
+        path: "/courses",
+        element: <CourseItem />,
+      },
+    ],
   },
 ]);
 
