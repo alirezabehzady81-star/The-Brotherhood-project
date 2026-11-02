@@ -11,14 +11,16 @@ import { FiArrowRight } from "react-icons/fi";
 import { Footer } from "../../components/partials/Footer/Footer";
 import { Header } from "../../components/partials/Header/Header";
 import { CourseItem } from "./components/CourseItem/CourseItem";
-import { useQuery } from "react-query";
+// import { useQuery } from "react-query";
+import { courseList } from "../../core/corseList";
 
 const CoursesPage = () => {
-  const courseItem = () => {
-    const getqueryList = () => {
-      useQuery()
-    };
-  };
+  // const courseItem = () => {
+  //   const getqueryList = () => {
+  //     useQuery()
+  //   };
+  // };
+  console.log(courseList)
 
   return (
     <div className="min-h-screen">
@@ -61,8 +63,11 @@ const CoursesPage = () => {
                 </div>
               </div>
               {/* course items show section */}
-              <div className="border w-full h-full py-2.5 px-5 flex flex-col justify-between">
+              <div className="border w-full h-full py-2.5 px-5 flex justify-between">
                 {/* corse items */}
+                <CourseItem />
+                <CourseItem />
+                <CourseItem />
                 <CourseItem />
                 {/* page navigation section */}
                 <div className="border w-52 h-6.25 mx-auto flex justify-between items-center">
