@@ -63,14 +63,16 @@ const CoursesPage = () => {
                 </div>
               </div>
               {/* course items show section */}
-              <div className="border w-full h-full py-2.5 px-5 flex justify-between">
+              <div className="border w-full h-full py-2.5 ">
                 {/* corse items */}
-                <CourseItem />
-                <CourseItem />
-                <CourseItem />
-                <CourseItem />
+                <div className="card-control flex justify-start gap-4 flex-wrap">
+                  <CourseItem />
+                  <CourseItem />
+                  <CourseItem />
+                  <CourseItem />
+                </div>
                 {/* page navigation section */}
-                <div className="border w-52 h-6.25 mx-auto flex justify-between items-center">
+                <div className="border w-52 h-6.25 mx-auto flex justify-between items-center mt-4">
                   <div className="border w-6.25 h-6.25 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.25) rounded-[25px] flex justify-center items-center">
                     <FiArrowRight />
                   </div>
