@@ -1,0 +1,19 @@
+# Use this workspace to collaborate
+workspace:
+  id: 0d004227-d55b-47f8-8555-aeedad145a3f
+
+dependencies:
+  mocks:
+    01a11efb-9570-74b0-9ead-4bf2fe538e5e:
+      name: api.consultoriome.com mock
+      path: ../postman/.dependencies/mocks/api.consultoriome.com mock
+
+cloudResources:
+  collections:
+    ../postman/collections/1: 51bcf4a0-e128-49c7-8107-747fed77ab48
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/
