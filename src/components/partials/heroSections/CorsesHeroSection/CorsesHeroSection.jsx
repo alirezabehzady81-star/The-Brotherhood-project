@@ -1,6 +1,6 @@
 // import React from 'react'
 import { SearchBox } from "../../../common/SearchBox/SearchBox";
-import pic1 from "../../../../assets/pictures/courses/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlMTRfM2RfcmVuZGVyX2NoYXJhY3Rlcl9vZl9hX3dvbWFuX3NpdHRpbmdfb25fdGhlX18yN2M4M2UyOC1kYWFmLTQ4MDEtODZlZi0wOWZlM2Q2N2ZkNTZfMS5wbmc 1.svg";
+import pic1 from "../../../../assets/pictures/courses/heroSectionBoyPic.svg"
 
 const CorsesHeroSection = () => {
   return (
