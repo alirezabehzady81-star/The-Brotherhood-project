@@ -1,5 +1,6 @@
 // import React from 'react'
 import singUpBtn from "./../../../assets/pictures/common/login btn.svg";
+// import Logininformition from "./Logininformition";
 
 const LoginButton = () => {
   return (

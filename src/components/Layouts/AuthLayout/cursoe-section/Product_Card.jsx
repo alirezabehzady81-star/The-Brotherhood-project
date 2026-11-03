@@ -8,9 +8,11 @@ import hours from "./All-imge-abouat-card/hours.png";
 import icon from "./All-imge-abouat-card/🔹Icon-Color.png"
 const Product_Card = () => {
   return (
-    <div className="">
+    <div className="relative w-full rounded-2xl   border-gray-200 bg-white p-4 shadow-sm">
+  
       <form action="SectionCard">
         <div className=" w-60 relative ">
+           
           <img
             src={courseimg}
             alt=""
@@ -28,7 +30,7 @@ const Product_Card = () => {
         </div>
         <div
           style={{
-            border: "1px solid red",
+            border: "1px solid white",
             width: "290px",
             height: "320px",
             borderRadius: "10px",
@@ -142,7 +144,7 @@ const Product_Card = () => {
               <div style={{width:'25px',height:'25px',position:'absolute',top:'70px',right:'10px'}}>
                 <img src={icon} alt="" />
               </div>
-              <div style={{position:'absolute',top:'70px',left:'-110px',color:'green',fontWeight:'600',fontSize:'18px'}}>
+              <div style={{position:'absolute',top:'70px',left:'-110px',color:'green',fontWeight:'600',fontSize:'17px',fontFamily:'sans-serif'}}>
                 <h1>150,000,000 تومان</h1>
               </div>
             </div>

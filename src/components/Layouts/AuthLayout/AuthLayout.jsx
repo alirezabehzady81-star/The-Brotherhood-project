@@ -8,6 +8,8 @@ import Hero_content from './heroboy/Hero_content';
 import Category from './category/Category';
 import Curses from "./cursoe-section/Curses";
 import BestTeacher from "./best-teacher/BestTeacher";
+import ServisTitle from "../../partials/Footer/servis_title/ServisTitle";
+import ArticleSection from "../../partials/Footer/article-and-new-section/ArticleSection";
 
 const AuthLayout = () => {
   return (
@@ -33,10 +35,22 @@ const AuthLayout = () => {
 <Curses/>
 
 <BestTeacher/>
+   
 </div>
     
       {/* footer */}
-      <div className="border h-25"></div>
+   <div className="mx-auto w-full max-w-[1440px] px-4 mt-20 ">
+   <div >
+    <ServisTitle/>
+    <div className="mt-25 ">
+  <ArticleSection/>
+    </div>
+   
+   </div>
+          
+     
+       
+      </div>
     </div>
   );
 };

@@ -1,12 +1,10 @@
 import React from "react";
 import Product_Card from "./Product_Card";
 //  import back from "../cursoe-section/All-imge-abouat-card/backgrond.png"
- 
 
 const Curses = () => {
   return (
-    <div className="   ">
-     
+    <div>
       <div
         style={{
           display: "flex",
@@ -19,7 +17,7 @@ const Curses = () => {
             // border: "2px solid red",
             width: "15px",
             height: "15px",
-            backgroundColor: "black",
+            backgroundColor: "#05e9f5",
             borderRadius: "100px",
             marginTop: "18px",
             marginLeft: "20px",
@@ -29,7 +27,7 @@ const Curses = () => {
           href="name"
           style={{
             fontSize: "30px",
-            fontFamily: "tahoma",
+            fontFamily: "sans-serif",
             fontWeight: 700,
             display: "flex",
             justifyContent: "center",
@@ -46,15 +44,14 @@ const Curses = () => {
           fontWeight: 800,
           color: "gray",
           fontSize: "22px",
-          marginTop: "15px",
+          marginTop: "16px",
+          fontFamily: "sans-serif",
         }}
       >
-
         به روز ترین دوره هایی که میتونید پیدا کنید
       </span>
-       
-      <div  className="flex flex-row justify-center gap-15 border " style={{marginTop:'70px'}} >
-        
+      {/* <h1 style={{left:'60px' ,position:'absolute',fontFamily:'sans-serif ',fontWeight:'600' ,marginTop:'10px',color:'#888'}}>"همه دوره ها "</h1> */}
+      <div className="relative flex flex-row justify-center top-20 gap-10 ">
         <Product_Card />
         <Product_Card />
         <Product_Card />

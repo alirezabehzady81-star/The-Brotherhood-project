@@ -10,7 +10,7 @@ const Routes = createBrowserRouter([
     element: <MainLayout />,
     children: [{ path: "/", element: <Landing /> }],
   },
-  // {
+   // {
   //   path: "/Authentication",
   //   element: <Authentication />,
   //   children: [...AuthenticationRouter],

@@ -9,3 +9,13 @@ body {
 }
 
  
+@font-face {
+  font-family: "IranSans";
+  src: url("../fonts/IranSans.ttf") format("truetype");
+ 
+}
+
+* {
+  font-family: "IranSans", sans-serif;
+}
+ 

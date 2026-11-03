@@ -6,7 +6,7 @@ const Menu = () => {
       <div className="relative  w-150 h-10 flex flex-row items-center gap-10 px-2      ">
         <div
           style={{
-            fontFamily: "revert",
+            fontFamily: "sans-serif",
             color: "#555555",
             display: "flex",
             flexWrap: "wrap",
@@ -16,7 +16,7 @@ const Menu = () => {
             fontSize: "17px",
           }}
         >
-          <span className="relative cursor-pointer text-[#555] transition-colors duration-300 hover:text-[#00C7C7] after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-[3px] after:w-full after:rounded-full after:bg-[#F59E0B] after:origin-center after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
+          <span className="relative cursor-pointer text-[#555] transition-colors duration-300 hover:text-[#00C7C7] after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-[3px] after:w-full after:rounded-full after:bg-[#F59E0B] after:origin-center after:scale-x-0 after:transition-transform  hover:after:scale-x-100">
             صفحه نخست
           </span>
           <span className="relative cursor-pointer text-[#555] transition-colors duration-300 hover:text-[#00C7C7] after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-[3px] after:w-full after:rounded-full after:bg-[#F59E0B] after:origin-center after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
