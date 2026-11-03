@@ -1,17 +1,9 @@
 // import React from 'react'
 import { RouterProvider } from "react-router-dom";
 import { Routes } from "../../config/router/Router";
-import { QueryClient, QueryClientProvider } from "react-query";
 
 const AppProvider = () => {
-  const queryClient = new QueryClient({
-    defaultOptions: { queries: { refetchOnWindowFocus: false } },
-  });
-  return (
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={Routes} />;
-    </QueryClientProvider>
-  );
+  return <RouterProvider router={Routes} />;
 };
 
 export { AppProvider };
