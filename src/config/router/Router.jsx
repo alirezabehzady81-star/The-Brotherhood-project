@@ -28,6 +28,7 @@ const Routes = createBrowserRouter([
     element: <ArticleNewsDetails/>,
   
   },
+  
         {
     path: "/dashboard",
     element: <UserProfile/>,

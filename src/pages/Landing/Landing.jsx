@@ -1,24 +1,24 @@
 // import React from 'react'
 
+import CardBottom from "./Card";
+import FavoritesContent from "./FavoritesContent";
+import { HeaderContent } from "./HeaderContent";
+import LearningContent from "./LearningContent";
+import Services from "./services";
+import TeacherContent from "./Teacher";
+
+
 const Landing = () => {
-  return <div className="w-[1440px] h-[4893px] flex flex-col bg-amber-100  ">
-    <div className=" w-screen h-30 ">   </div>
-<div className="w-screen h-[652px] flex ">
-<div className="w-1/2 h-[652px] flex justify-center ">
-<div className="m-auto w-[500px] h-[280px]  flex flex-col ">
-<div className="w-[354px] h-[90px] flex flex-row gap-2">
-<h1 className="font-bold text-[60px] text-[">عنوان</h1>
-<h1 className="">آموزشگاه</h1>
-
-</div>
-
-
-</div>
-
-</div>
-
-</div>
-  </div>;
+  return (
+  <div className="w-[1440px] h-[4893px] flex flex-col bg-[#F7F7F7] overflow-x-hidden ">
+            <div  className=" w-screen h-30 ">   </div>
+  <HeaderContent/>
+<FavoritesContent/>.
+<LearningContent/>
+<TeacherContent/>
+<Services/>
+<CardBottom/>
+  </div>);
 };
 
 export { Landing };
