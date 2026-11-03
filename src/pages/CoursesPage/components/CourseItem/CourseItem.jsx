@@ -1,4 +1,11 @@
 // import React from 'react'
+import { CorsesHeroSection } from "./../../../../components/partials/heroSections/CorsesHeroSection/CorsesHeroSection";
+import trashPic from "../../../../assets/pictures/courses/icons8-trash-can 1.svg";
+// import { FilterBox } from "./components/FilterBox/FilterBox";
+import sortPic from "../../../../assets/pictures/courses/1470039561556277129 1.svg";
+import { GoChevronDown } from "react-icons/go";
+import { FiMenu } from "react-icons/fi";
+import { BiGridAlt } from "react-icons/bi";
 import coursePic from "../../../../assets/pictures/courses/figma-icon-512x512-vdap7urx 1.svg";
 import { FaRegUser } from "react-icons/fa6";
 import academiPic from "../../../../assets/pictures/courses/academic hat.svg";

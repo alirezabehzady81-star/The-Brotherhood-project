@@ -17,7 +17,7 @@ const Routes = createBrowserRouter([
   },
   {
     path: "/courses",
-    element: <CoursesPage />,
+    element: <CoursesPage />
   },
 ]);
 

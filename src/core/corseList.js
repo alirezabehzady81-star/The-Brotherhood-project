@@ -1,0 +1,68 @@
+const courseList = [
+  {
+    id: 1,
+    courseName: "دوره پیشرفته دیزاین",
+    teacherName: "حامد نظری",
+    level: "مقدماتی",
+    score: 5,
+    price: "1,450,000",
+  },
+  {
+    id: 2,
+    courseName: "دوره پیشرفته ری اکت",
+    teacherName: "محمدرضا ساداتی",
+    level: "پیشرفته",
+    score: 5,
+    price: "3,000,000",
+  },
+  {
+    id: 3,
+    courseName: "دوره پیشرفته جاوا اسکریپت",
+    teacherName: "مسیح درخشانی",
+    level: "پیشرفته",
+    score: 5,
+    price: "1,500,000",
+  },
+  {
+    id: 4,
+    courseName: "دوره پیشرفته سی اس اس",
+    teacherName: "بهادر پلنگ",
+    level: "مقدماتی",
+    score: 3.5,
+    price: "2,800,000",
+  },
+  {
+    id: 5,
+    courseName: "دوره پیشرفته html",
+    teacherName: "حامد دارابی",
+    level: "مقدماتی",
+    score: 4,
+    price: "1,450,000",
+  },
+  {
+    id: 6,
+    courseName: "دوره پیشرفته نکست",
+    teacherName: "حامد نظری",
+    level: "مقدماتی",
+    score: 5,
+    price: "1,450,000",
+  },
+  {
+    id: 1,
+    courseName: "دوره پیشرفته دیزاین",
+    teacherName: "حامد نظری",
+    level: "مقدماتی",
+    score: 5,
+    price: "1,450,000",
+  },
+  {
+    id: 1,
+    courseName: "دوره پیشرفته دیزاین",
+    teacherName: "حامد نظری",
+    level: "مقدماتی",
+    score: 5,
+    price: "1,450,000",
+  },
+];
+
+export { courseList };

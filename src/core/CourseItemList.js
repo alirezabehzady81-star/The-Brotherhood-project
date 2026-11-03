@@ -1,4 +1,4 @@
-const CourseItemList = [
+const courseList = [
   {
     id: 1,
     courName: "دوره پیشرفته دیزاین",
@@ -73,4 +73,4 @@ const CourseItemList = [
   },
 ];
 
-export { CourseItemList };
+export { courseList };
