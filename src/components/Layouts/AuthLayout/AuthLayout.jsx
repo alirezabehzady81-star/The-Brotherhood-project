@@ -10,6 +10,8 @@ import Curses from "./cursoe-section/Curses";
 import BestTeacher from "./best-teacher/BestTeacher";
 import ServisTitle from "../../partials/Footer/servis_title/ServisTitle";
 import ArticleSection from "../../partials/Footer/article-and-new-section/ArticleSection";
+import Padcast from "../../partials/Footer/Padcast-Page/Padcast";
+import EndFooter from "../../partials/Footer/End-Footer/EndFooter";
 
 const AuthLayout = () => {
   return (
@@ -45,12 +47,13 @@ const AuthLayout = () => {
     <div className="mt-25 ">
   <ArticleSection/>
     </div>
-   
+  
    </div>
-          
+            <Padcast/>
      
-       
+       <EndFooter/>
       </div>
+       
     </div>
   );
 };
