@@ -1,42 +1,53 @@
-import {
-  Checkbox,
-  CheckboxGroup,
-  Description,
-  Label,
-  Surface,
-} from "@heroui/react";
+import { Checkbox, CheckboxGroup, Surface } from "@heroui/react";
+import { GoChevronUp } from "react-icons/go";
 
 function FilterBox() {
   return (
-    <Surface className="w-68 rounded-xl p-6 border bg-[#FAFAFA]">
+    <Surface className="w-68 rounded-xl py-2.5 px-4.5 border bg-[#FAFAFA] flex items-center flex-col text-[#333333] text-[16px] font-normal">
       <CheckboxGroup name="interests" variant="secondary">
-        <Label>تکنولوژی</Label>
-        <Checkbox value="coding">
+        <div className="w-59.25 border-b border-[#E6E6E6] text-[18px] flex justify-between pb-1.25">
+          تکنولوژی
+          <GoChevronUp />
+        </div>
+        <Checkbox value="Boot Strap">
           <Checkbox.Content>
             <Checkbox.Control>
               <Checkbox.Indicator />
             </Checkbox.Control>
-            Coding
+            Boot Strap
           </Checkbox.Content>
-          <Description>Love building software</Description>
         </Checkbox>
-        <Checkbox value="design">
+        <Checkbox value="React">
           <Checkbox.Content>
             <Checkbox.Control>
               <Checkbox.Indicator />
             </Checkbox.Control>
-            Design
+            React
           </Checkbox.Content>
-          <Description>Enjoy creating beautiful interfaces</Description>
         </Checkbox>
-        <Checkbox value="writing">
+        <Checkbox value="java script">
           <Checkbox.Content>
             <Checkbox.Control>
               <Checkbox.Indicator />
             </Checkbox.Control>
-            Writing
+            java script
           </Checkbox.Content>
-          <Description>Passionate about content creation</Description>
+        </Checkbox>
+        <Checkbox value=".Net Core">
+          <Checkbox.Content>
+            <Checkbox.Control>
+              <Checkbox.Indicator />
+            </Checkbox.Control>
+            .Net Core
+          </Checkbox.Content>
+        </Checkbox>
+        <Checkbox value="tailwind">
+          <Checkbox.Content>
+            <Checkbox.Control>
+              <Checkbox.Indicator />
+            </Checkbox.Control>
+            tailwind
+          </Checkbox.Content>
         </Checkbox>
       </CheckboxGroup>
     </Surface>
