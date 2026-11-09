@@ -1,4 +1,5 @@
-// import React from 'react'
+// import { FilterBox } from "./components/FilterBox/FilterBox";
+
 import coursePic from "../../../../assets/pictures/courses/figma-icon-512x512-vdap7urx 1.svg";
 import { FaRegUser } from "react-icons/fa6";
 import academiPic from "../../../../assets/pictures/courses/academic hat.svg";
