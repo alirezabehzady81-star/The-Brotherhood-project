@@ -1,7 +1,9 @@
 // import React from 'react'
 
 const CourseDetail = () => {
-  return <div></div>;
+  return <div>
+    salam
+  </div>;
 };
 
 export { CourseDetail };
