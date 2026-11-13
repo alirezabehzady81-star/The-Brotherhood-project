@@ -2,10 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 // import pages
 import { MainLayout } from "../../components/Layouts/MainLayout/MainLayout";
 import { AuthWrapper } from "../../components/Layouts/AuthLayout/AuthWrapper";
-import { AuthenticationRouter } from "./Authentication.router";
+import { UserPanel } from "../../components/Layouts/AuthLayout/UserPanel/UserPanel";
+
 
 import { AuthenticationRouter } from "./Authentication.router";
 import { UserPanelRouter } from "./UserPanel.router";
+
 
 const Routes = createBrowserRouter([
   {
