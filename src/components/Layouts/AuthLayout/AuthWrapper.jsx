@@ -18,7 +18,6 @@ const AuthWrapper = () => {
         </div>
       </div>
       {/* content */}
-      <UserPanel/>
       <Outlet />
       {/* footer */}
       <div className="flex h-28 gap-2 justify-end items-center px-24">
