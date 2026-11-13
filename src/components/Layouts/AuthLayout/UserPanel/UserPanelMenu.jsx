@@ -4,7 +4,7 @@ import styles from './UserPanel.module.css'
 
 const UserPanelMenu = ({pageName, pageRouter}) => {
   return (
-    <Link className={styles.menuItem} to={pageRouter}>{pageName}</Link>
+    <Link className="block mb-[15px]" to={pageRouter}>{pageName}</Link>
   )
 }
 
