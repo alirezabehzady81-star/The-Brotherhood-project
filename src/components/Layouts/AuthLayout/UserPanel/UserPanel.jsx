@@ -3,13 +3,13 @@ import UserPanelMenu from './UserPanelMenu'
 import { Link, Outlet } from 'react-router-dom'
 const UserPanel = () => {
     const   [menuState, setmenuState] = useState([
-        {id: 1, name: "داشبورد", pageRoute: "/"},
-        {id: 2, name: "اطلاعات کاربری", pageRoute: "/"},
-        {id: 3, name: "دوره های من", pageRoute: "/"},
-        {id: 4, name: "دوره های رزرو شده", pageRoute: "/"},
-        {id: 5, name: "دیدگاه های من", pageRoute: "/"},
-        {id: 6, name: "علاقه مندی ها", pageRoute: "/"},
-        {id: 7, name: "تنظیمات امنیتی", pageRoute: "/"}
+        {id: 1, name: "داشبورد", pageRoute: "/Authentication/UserPanel/dashboard"},
+        {id: 2, name: "اطلاعات کاربری", pageRoute: "/Authentication/UserPanel/userprofile"},
+        {id: 3, name: "دوره های من", pageRoute: "/Authentication/UserPanel/mycourse"},
+        {id: 4, name: "دوره های رزرو شده", pageRoute: "/Authentication/UserPanel/myreservecourse"},
+        {id: 5, name: "دیدگاه های من", pageRoute: "/Authentication/UserPanel/mycomments"},
+        {id: 6, name: "علاقه مندی ها", pageRoute: "/Authentication/UserPanel/myfavorites"},
+        {id: 7, name: "تنظیمات امنیتی", pageRoute: "/Authentication/UserPanel/securitysetting"}
     ]) 
   return (
     <div className="m-auto w-312.5 h-203.25 rounded-[15px] shadow-[0px_1px_10px_0px_rgba(0,0,0,0.25)] overflow-hidden flex">
