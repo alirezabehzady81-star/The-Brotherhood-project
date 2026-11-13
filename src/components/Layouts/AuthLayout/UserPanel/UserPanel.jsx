@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import UserPanelMenu from './UserPanelMenu'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 const UserPanel = () => {
     const   [menuState, setmenuState] = useState([
         {id: 1, name: "داشبورد", pageRoute: "/"},
@@ -31,6 +31,7 @@ const UserPanel = () => {
             <Link to="/" className="w-7.5 h-7.5 absolute top-7.75 left-8">
                 <img src="/src/assets/pictures/common/Home.svg" alt="Home" />
             </Link>
+            <Outlet/>
         </div>
     </div>
   )
