@@ -1,5 +1,5 @@
-import { Dashboard } from "../../components/Layouts/UserPanel/Dashboard/Dashboard";
-import { UserProfile } from "../../components/Layouts/UserPanel/UserProfile/UserProfile";
+import { Dashboard } from "../../components/Layouts/AuthLayout/UserPanel/Layout/Dashboard/Dashboard" ;
+import { UserProfile } from "../../components/Layouts/AuthLayout/UserPanel/Layout/UserProfile/UserProfile";
 
 const UserPanelRouter = [
   {
