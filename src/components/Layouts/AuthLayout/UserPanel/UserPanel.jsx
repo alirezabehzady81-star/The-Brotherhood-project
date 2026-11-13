@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import styles from './UserPanel.module.css'
 import UserPanelMenu from './UserPanelMenu'
 import { Link } from 'react-router-dom'
 const UserPanel = () => {
@@ -16,8 +15,8 @@ const UserPanel = () => {
     <div className="m-auto w-312.5 h-203.25 rounded-[15px] shadow-[0px_1px_10px_0px_rgba(0,0,0,0.25)] overflow-hidden flex">
         <div className="w-77 h-full bg-[#01CEC9] flex flex-col items-center">
             <div className="mt-11.75 w-31.25 h-31.25 rounded-full bg-[whitesmoke]"></div>
-            <div className={styles.wellcome}>فلان فلانی خوش آمدید</div>
-            <div className={styles.menu}>
+            <div className="">فلان فلانی خوش آمدید</div>
+            <div className="">
                 {
                     menuState.map((item, index) => {
                         return(
