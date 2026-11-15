@@ -5,7 +5,6 @@ import { Email } from "../../common/Email/Email";
 import { Logo } from "../../core/icons/Logo/Logo";
 import { SocialMedia } from "../../common/SocialMedia/SocialMedia";
 import { LoginButton } from "../../common/LoginButton/LoginButton";
-import UserPanel from "./UserPanel/UserPanel";
 
 const AuthWrapper = () => {
   return (
