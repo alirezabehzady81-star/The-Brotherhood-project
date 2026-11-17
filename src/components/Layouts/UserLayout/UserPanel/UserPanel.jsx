@@ -27,7 +27,7 @@ const UserPanel = () => {
             </div>
             <div className="mt-auto mb-14">خروج از حساب </div>
         </div>
-        <div className="w-full h-full flex flex-col items-center relative">
+        <div className="w-full h-full flex flex-col items-center relative py-[100px] px-[70px]">
             <Link to="/" className="w-7.5 h-7.5 absolute top-7.75 left-8">
                 <img src="/src/assets/pictures/common/Home.svg" alt="Home" />
             </Link>
