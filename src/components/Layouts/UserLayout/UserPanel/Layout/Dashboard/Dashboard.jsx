@@ -1,22 +1,31 @@
 import React from 'react'
+import courseBtn from "./../../../../../../assets/pictures/common/course.svg";
+import basketBtn from "./../../../../../../assets/pictures/common/basket.svg";
+import Infocard from '../../../../../common/Infocard/Infocard';
 
 const Dashboard = () => {
   return (
     <div>Dashboard
-      <div>
-        <div className="w-[190px] h-[77px] relative rounded-[5px] bg-[rgba(249,249,249,1)] shadow-[0_0_2px_rgba(0,0,0,0.25)]">
+      <div className="w-[800px] flex items-center justify-between">
 
-          <div className="absolute w-[57px] h-[57px] rounded-full bg-[rgba(0,180,175,1)] bg-[url('../assets/pictures/common/course.svg')] bg-cover bg-center left-[19px] top-[-28px]">
+        <Infocard
+          title="4 دوره"
+          description="شرکت کرده اید"
+          icon={courseBtn}
+          color="rgba(0,180,175,1)"
+        />
+        <Infocard
+          title="2 دوره"
+          description="رزرو کرده اید"
+          icon={basketBtn}
+          color="rgba(255, 184, 0, 1)"
+        />
+        <p className="w-[192px] text-[16px] text-[rgba(171,171,171,1)] text-center"> برای شرکت در دوره ها باید حداقل ٪ ۸۰ از پروفایل خود را تکمیل کنید</p>
+
+        <div className="w-[110px] h-[110px] rounded-full flex items-center justify-center bg-[conic-gradient(from_90deg,rgba(228,137,0,1)_60%,rgba(0,0,0,0.25)_60%)] p-[6px] shadow-[0_1px_4px_rgba(0,0,0,0.25)]">
+          <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-[25px] text-[rgba(0,106,103,1)]">
+            60%
           </div>
-
-          <p className="text-[30px] text-[rgba(0,180,175,1)]">
-            4 دوره
-          </p>
-
-          <p className="text-[18px] text-[rgba(167,167,167,1)]">
-            شرکت کرده اید
-          </p>
-
         </div>
       </div>
     </div>
