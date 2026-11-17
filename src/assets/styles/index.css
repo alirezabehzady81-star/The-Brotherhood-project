@@ -6,6 +6,11 @@
   src: url("../fonts/Yekan.ttf");
 }
 
+@font-face {
+  font-family: "cherry";
+  src: url("../fonts/CherryBomb.ttf");
+}
+
 body {
   margin: 0;
   direction: rtl;
