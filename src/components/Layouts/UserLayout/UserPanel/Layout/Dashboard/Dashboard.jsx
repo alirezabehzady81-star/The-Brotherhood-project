@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import courseBtn from "./../../../../../../assets/pictures/common/course.svg";
 import basketBtn from "./../../../../../../assets/pictures/common/basket.svg";
+import belltBtn from "./../../../../../../assets/pictures/common/Bell.svg";
 import Infocard from '../../../../../common/Infocard/Infocard';
 
 const Dashboard = () => {
@@ -10,7 +11,8 @@ const Dashboard = () => {
     { id: 3, title: "عنوان خبر سوم", date: "1405/08/27", isNew: true },
   ])
   return (
-    <div>Dashboard
+    <div>
+      {/* Head */}
       <div className="w-[800px] flex items-center justify-between">
 
         <Infocard
@@ -34,11 +36,12 @@ const Dashboard = () => {
         </div>
       </div>
 
-
-
-      <div className="w-[800px] px-[41px] pb-[24px] rounded-[10px] bg-[rgba(246,255,255,1)] shadow-[0_1px_3px_rgba(0,0,0,0.25)]">
+      {/* Latest News and Articles  */}
+      <div className="relative w-[800px] px-[41px] pb-[24px] mt-[55px] rounded-[10px] bg-[rgba(246,255,255,1)] shadow-[0_1px_3px_rgba(0,0,0,0.25)]">
+        <div className="absolute left-[42px] top-[-25px] w-[50px] h-[50px] rounded-[10px] bg-[rgba(247,247,247,1)] shadow-[0px_1px_2px_rgba(0,0,0,0.25)] flex items-center justify-center">
+          <img src={belltBtn}  className="w-[22px] h-[22px] object-contain" />
+        </div>
         <h3 className="py-[15px] text-right">جدیدترین اخبار مقالات</h3>
-
         {news.map((item, index) => (
           <div key={item.id}>
             <div className="flex justify-between items-center py-2">
@@ -57,7 +60,37 @@ const Dashboard = () => {
       </div>
 
 
+      {/* Spacing */}
+      <div className="w-full h-[1px] bg-[rgba(242,242,242,1)] mt-[32px] mb-[22px]"></div>
 
+
+      {/* Courses Section */}
+      <div className="grid grid-cols-2 gap-[24px]">
+        {/* Right Section */}
+        <div className="flex flex-col">
+          <h3 className="text-right text-[18px] text-[rgba(119,119,119,1)]">دوره‌های در حال برگزاری:</h3>
+
+          {/* Course Cards */}
+          <div className="flex flex-col gap-[12px] mt-[20px]">
+            {/* CourseCard */}
+            {/* CourseCard */}
+          </div>
+
+          <div className="text-center text-[11px] text-[rgba(183,183,183,1)] mt-[20px] cursor-pointer">مشاهده بیشتر &gt;</div>
+        </div>
+
+        {/* Left Section */}
+        <div className="flex flex-col">
+          <h3 className="text-right text-[18px] text-[rgba(119,119,119,1)]">دوره‌های پیشنهادی:</h3>
+          {/* Course Cards */}
+          <div className="flex flex-col gap-[12px] mt-[20px]">
+            {/* CourseCard */}
+            {/* CourseCard */}
+          </div>
+          <div className="text-center text-[11px] text-[rgba(183,183,183,1)] mt-[20px] cursor-pointer">مشاهده بیشتر &gt;</div>
+        </div>
+
+      </div>
 
 
 
