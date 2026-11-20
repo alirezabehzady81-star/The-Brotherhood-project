@@ -10,6 +10,7 @@ const Dashboard = () => {
     { id: 2, title: "عنوان خبر دوم", date: "1405/08/28", isNew: false },
     { id: 3, title: "عنوان خبر سوم", date: "1405/08/27", isNew: true },
   ])
+  const percentage = 60
   return (
     <div>
       {/* Head */}
@@ -29,9 +30,9 @@ const Dashboard = () => {
         />
         <p className="w-[192px] text-[16px] text-[rgba(171,171,171,1)] text-center"> برای شرکت در دوره ها باید حداقل ٪ ۸۰ از پروفایل خود را تکمیل کنید</p>
 
-        <div className="w-[110px] h-[110px] rounded-full flex items-center justify-center bg-[conic-gradient(from_90deg,rgba(228,137,0,1)_60%,rgba(0,0,0,0.25)_60%)] p-[6px] shadow-[0_1px_4px_rgba(0,0,0,0.25)]">
+        <div className="w-[110px] h-[110px] rounded-full flex items-center justify-center p-[6px] shadow-[0_1px_4px_rgba(0,0,0,0.25)]" style={{ background: `conic-gradient(from 90deg, rgba(228,137,0,1) ${percentage}%, rgba(0,0,0,0.25) ${percentage}%)` }}>
           <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-[25px] text-[rgba(0,106,103,1)]">
-            60%
+            {percentage}%
           </div>
         </div>
       </div>
