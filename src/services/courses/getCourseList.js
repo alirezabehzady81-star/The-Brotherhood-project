@@ -1,8 +1,9 @@
 import { useQuery } from "react-query";
 import { http } from "../interceptor";
 
-export const getCourseList = () => {
+export const GetCourseList = () => {
   return useQuery({
+    queryKey:"12",
     queryFn: async () => {
       //   const response = await axios.get(
       //     "http://87.107.2.216:3001/Home/GetCoursesWithPagination",

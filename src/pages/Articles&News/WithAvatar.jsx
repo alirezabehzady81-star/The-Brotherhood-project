@@ -1,30 +1,45 @@
-import { Card } from "@heroui/react";
+
 import { FiCalendar, FiEye } from "react-icons/fi";
 import { MdKeyboardArrowLeft } from "react-icons/md";
  import { Link } from "react-router-dom";
+import { GetArticleList } from "../../services/ArticleNews/ArticleNews";
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
 export function WithAvatar() {
+  
+  const articleData = useSelector((state) => state.article)
+
+  const {data, refetch}= GetArticleList(articleData.params)
+
+  console.log("data ==>", data)
+
+  useEffect(() => {
+    refetch()
+  }, [articleData.params,refetch])
+
+  // const data = []
   return (
-    <div>
-      <Card className="w-[291px] gap-0 overflow-hidden p-0 h-[381px]" >
-        <img
+    <div className=" w-230 h-fit  my-4  gap-5 flex flex-wrap justify-center">
+      {data?.news?.map((item) => (
+      <div className="w-72.25 gap-0 overflow-hidden p-0 h-95.25" >
+        <img 
           alt="انگولار بهتر است یا ری اکت؟"
-          className="block h-[170px] mt-0 rounded-[18px] w-full object-cover "
+          className="block h-42.5 mt-0 rounded-[18px] w-full object-cover "
           loading="lazy"
-          src="/src/img/f4e701a9a7f2a7fb0c9fd179bc58e1671a7757b9.png"
+          src="/src/img/Rectangle 95.svg"
         />
 
-        <Card.Header dir="rtl" className=" text-right text gap-2 px-4 pt-2 pb-0">
-          <Card.Title className="text-bold w-full font-bold text-slate-800">
-            انگولار بهتر است یا ری اکت؟
-          </Card.Title>
-          <Card.Description className="text-[11px] font-normal  leading-7 text-gray-400">
-            angular یا react کدام بهتر است؟ اگه شما تو حوزه طراحی و برنامه نویسی
-            وب فعالیت داشته باشین، قطعا اسم تکنولوژی هایی مثل react و angular رو
-            ...
-          </Card.Description>
-        </Card.Header>
+        <div dir="rtl" className=" text-right text overflow-hidden gap-2 px-4 h-30 pt-2 pb-0">
+          <p className="text-bold w-full font-bold text-slate-800 ">
+            {item.title}
+          </p>
+          <p className="text-[11px] font-normal  leading-7 text-gray-400">
+          {item.googleDescribe}
+         
+          </p>
+        </div>
 
-        <Card.Footer dir="rtl" className="flex flex-col gap-3 p-0 px-3">
+        <div dir="rtl" className="flex flex-col  gap-3 p-0 px-3">
           <div className="flex w-full items-center justify-between border-t border-gray-200 pt-3 text-xs text-gray-500">
             <span className="flex items-center gap-1.5">
               <FiCalendar className="text-base text-teal-500" />
@@ -45,8 +60,9 @@ export function WithAvatar() {
             <MdKeyboardArrowLeft dir="rtl" className=" text-base" />
             مطالعه بیشتر
           </Link>
-        </Card.Footer>
-      </Card>
+        </div>
+      </div>
+        ))};
     </div>
   );
 }
